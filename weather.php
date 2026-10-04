@@ -11,4 +11,4 @@ if (count($argv) !== 2)
 $weatherService = new WeatherService();
 $data = $weatherService->getWeather($argv[1]);
 
-echo ("\nCity: {$data['city']}\nTemperature: {$data['temperature']}\nDescription: {$data['description']}\nHumidity: {$data['humidity']}\n");
+echo ("\nCity: {$data['city']}\nTemperature: {$data['temperature']}°C\nDescription: {$data['description']}\nHumidity: {$data['humidity']}%\n");
