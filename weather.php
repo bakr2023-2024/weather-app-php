@@ -9,4 +9,6 @@ $dotenv->load();
 if (count($argv) !== 2)
     exit("Usage: php weather.php <city-name>");
 $weatherService = new WeatherService();
-print_r($weatherService->getWeather($argv[1]));
+$data = $weatherService->getWeather($argv[1]);
+
+echo ("\nCity: {$data['city']}\nTemperature: {$data['temperature']}\nDescription: {$data['description']}\nHumidity: {$data['humidity']}\n");
