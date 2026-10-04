@@ -1,0 +1,19 @@
+{
+    "name": "bakr231/weather-app",
+    "description": "A simple weather application",
+    "require": {
+        "guzzlehttp/guzzle": "^8.2",
+        "vlucas/phpdotenv": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bakr231\\WeatherApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bakr2023-2024",
+            "email": "bakr2023.2024@gmail.com"
+        }
+    ]
+}
